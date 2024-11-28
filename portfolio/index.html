@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshath K - Portfolio</title>
+    <link href=" " rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3ed120;
+            --secondary-color: #6fb635;
+            --background-color: #f5f7fa;
+            --text-color: #333;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+        header, section, footer {
+            padding: 60px 0;
+        }
+        header {
+            background-color: var(--secondary-color);
+            color: #fff;
+            text-align: center;
+        }
+        header h1 {
+            color: white; /* Changed to white */
+            font-size: 2.5em; /* Increased font size for more prominence */
+            margin-bottom: 10px; /* Added margin for separation from tagline */
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.05);
+        }
+        #about img {
+            max-width: 250px;
+        }
+        .project {
+            margin-bottom: 40px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .project:hover {
+            transform: translateY(-5px);
+        }
+        .project img {
+            max-height: 400px;
+            object-fit: cover;
+            width: 100%;
+        }
+        h2, h3 {
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+        }
+        #skills ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        #skills li {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 25px;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+        #skills li:hover {
+            background-color: var(--secondary-color);
+        }
+        #contact p {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: var(--secondary-color);
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: var(--secondary-color);
+            color: #fff;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>KC Ranjith </h1>
+            <p>CSE Engineering Student | Aspiring Software Developer</p>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <img src="images/Screenshot_20241128-201859.png" alt="Jitesh K">
+            <p>As a Computer Science and Engineering student, I'm passionate about leveraging technology to solve real-world problems. With a strong foundation in programming languages and a keen interest in software development, I'm constantly expanding my skills and knowledge in the field of computer science. I enjoy tackling challenging projects and am always eager to learn new technologies and methodologies.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>C</li>
+                <li>C++</li>
+                <li>Java</li>
+                <li>Python</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Online shopping management system </h3>
+                <img src="/portfolio/images/WhatsApp Image 2024-11-15 at 19.42.50_6b09b014.jpg" alt="Rental Management System">
+                <p>Developed a comprehensive online shopping Management System that assists both users and buyers. </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume">
+        <div class="container">
+            <h2>Resume</h2>
+            <p>Want to know more about my experience and qualifications?</p>
+            <a href="/portfolio/images/RESUME 2nd year.pdf" target="_blank" class="btn">Download Resume</a>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:r@gmail.com">har0@gmail.com</a></p>
+            <p>Phone: <a href="tel:9454665675">325324523645</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ranjith. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
